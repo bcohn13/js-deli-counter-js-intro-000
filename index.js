@@ -5,8 +5,9 @@ function takeANumber(line,name) {
 
 function nowServing(line) {
   if (line.length > 0) {
-    return `Currently serving ${line[0]}.`
-    line.splice(0,1)
+    customer=line.splice(1)
+    return `Currently serving ${customer}.`
+    
 
 }
   else {
