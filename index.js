@@ -16,14 +16,19 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  var status="The line is currently:"
-  for (let i=0; i<line.length; i++) {
-	if (i < line.length-1) {
-    	status=status+` ${i+1}. ${line[i]},`
+  if (line.length > 0) {
+    var status="The line is currently:"
+    for (let i=0; i<line.length; i++) {
+  	if (i < line.length-1) {
+      	status=status+` ${i+1}. ${line[i]},`
+      }
+      else {
+      	status=status+` ${i+1}. ${line[i]}`
+      }
     }
-    else {
-    	status=status+` ${i+1}. ${line[i]}`
-    }
+    return status
   }
-  return status
+  else {
+    return "The line is currently empty."
+  }
 }
