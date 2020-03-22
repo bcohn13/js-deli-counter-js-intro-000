@@ -14,3 +14,11 @@ function nowServing(line) {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine(line) {
+  var line_stat={}
+  for (let i=0; i<line.length; i++) {
+    
+    line_stat[i]=line[i]
+  }
+}
