@@ -6,7 +6,7 @@ function takeANumber(line,name) {
 function nowServing(line) {
   if (line.length > 0) {
     return `Currently serving ${line[0]}.`
-    delete line[0]
+    line.splice(0,1)
 
 }
   else {
