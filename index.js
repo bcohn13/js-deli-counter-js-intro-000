@@ -19,6 +19,6 @@ function currentLine(line) {
   var line_stat={}
   for (let i=0; i<line.length; i++) {
 
-    line_stat[i]=line[i]
+    line_stat[`${i+1}`]=line[i]
   }
 }
